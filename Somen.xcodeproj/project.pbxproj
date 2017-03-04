@@ -17,7 +17,6 @@
 		60084D181E6AF57000D17A6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60084D161E6AF57000D17A6F /* LaunchScreen.storyboard */; };
 		60E732701E6AFA3000AB2C7D /* Somen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7326F1E6AFA3000AB2C7D /* Somen.swift */; };
 		60E732721E6AFA4700AB2C7D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E732711E6AFA4700AB2C7D /* RxSwift.framework */; };
-		60E732741E6AFCF000AB2C7D /* SomenURLSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E732731E6AFCF000AB2C7D /* SomenURLSessionDelegate.swift */; };
 		60E732761E6AFDCD00AB2C7D /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E732751E6AFDCD00AB2C7D /* OAuth.swift */; };
 		60E732781E6B00C900AB2C7D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E732771E6B00C900AB2C7D /* StringExtension.swift */; };
 		60E7328D1E6B09A600AB2C7D /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E7328B1E6B09A600AB2C7D /* CommonCrypto.framework */; };
@@ -71,7 +70,6 @@
 		60084D191E6AF57000D17A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60E7326F1E6AFA3000AB2C7D /* Somen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Somen.swift; sourceTree = "<group>"; };
 		60E732711E6AFA4700AB2C7D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = SOURCE_ROOT; };
-		60E732731E6AFCF000AB2C7D /* SomenURLSessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomenURLSessionDelegate.swift; sourceTree = "<group>"; };
 		60E732751E6AFDCD00AB2C7D /* OAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
 		60E732771E6B00C900AB2C7D /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		60E7328B1E6B09A600AB2C7D /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/Mac/CommonCrypto.framework; sourceTree = SOURCE_ROOT; };
@@ -158,7 +156,6 @@
 				60E7326F1E6AFA3000AB2C7D /* Somen.swift */,
 				60E732751E6AFDCD00AB2C7D /* OAuth.swift */,
 				60E732771E6B00C900AB2C7D /* StringExtension.swift */,
-				60E732731E6AFCF000AB2C7D /* SomenURLSessionDelegate.swift */,
 			);
 			path = Somen;
 			sourceTree = "<group>";
@@ -402,7 +399,6 @@
 			files = (
 				60E732781E6B00C900AB2C7D /* StringExtension.swift in Sources */,
 				60E732761E6AFDCD00AB2C7D /* OAuth.swift in Sources */,
-				60E732741E6AFCF000AB2C7D /* SomenURLSessionDelegate.swift in Sources */,
 				60E732701E6AFA3000AB2C7D /* Somen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
