@@ -28,17 +28,23 @@ public class Somen {
 
 public extension Somen {
 
-  func home() -> Observable<[String: Any]> {
-    let configuration = URLSessionConfiguration.default
-    let session = URLSession.init(configuration: configuration, delegate: nil, delegateQueue: nil)
-    let url = URL.init(string: "https://api.twitter.com/1.1/account/verify_credentials.json")!
+  func home() -> Observable<Data> {
+    let url = URL.init(string: "https://userstream.twitter.com/1.1/user.json")!
     var request = URLRequest.init(url: url)
     let auth = OAuth.generateHeaderContents(request: request, credential: credential)
-    request.allHTTPHeaderFields = ["Authorization": auth]
+    let configuration = URLSessionConfiguration.default
 
-    return session.rx.data(request: request)
-      .map({ (data) -> [String: Any] in
-        return try! JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [String: Any]
+    return Observable<Data>.create({ (observer) -> Disposable in
+      let dataDelegate = StreamingDataDelegate.init(receivedDataHandler: { (session, task, data) in
+        observer.onNext(data)
+      })
+      let session = URLSession.init(configuration: configuration, delegate: dataDelegate, delegateQueue: nil)
+      request.allHTTPHeaderFields = ["Authorization": auth]
+
+      let task = session.dataTask(with: request)
+      task.resume()
+
+      return Disposables.create()
     })
   }
 

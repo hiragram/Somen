@@ -36,7 +36,8 @@ class ViewController: NSViewController {
     super.viewDidAppear()
 
     somen.home().subscribe(onNext: { (dict) in
-      print(dict)
+      let aaa = String.init(data: dict, encoding: .utf8)!
+      print(aaa)
     }, onError: { (error) in
       print(error)
     }, onCompleted: { 

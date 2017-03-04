@@ -28,6 +28,7 @@
 		60E732A21E6B0F6F00AB2C7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E732A01E6B0F6F00AB2C7D /* Main.storyboard */; };
 		60E732A91E6B0FE500AB2C7D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E7328F1E6B0D4000AB2C7D /* RxCocoa.framework */; };
 		60E732AA1E6B0FE500AB2C7D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E732711E6AFA4700AB2C7D /* RxSwift.framework */; };
+		60E732AD1E6B2D6D00AB2C7D /* StreamingDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E732AC1E6B2D6D00AB2C7D /* StreamingDataDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		60E7329E1E6B0F6F00AB2C7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60E732A11E6B0F6F00AB2C7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60E732A31E6B0F6F00AB2C7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60E732AC1E6B2D6D00AB2C7D /* StreamingDataDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamingDataDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				60084CF01E6AF52300D17A6F /* Somen.h */,
 				60084CF11E6AF52300D17A6F /* Info.plist */,
 				60E7326F1E6AFA3000AB2C7D /* Somen.swift */,
+				60E732AC1E6B2D6D00AB2C7D /* StreamingDataDelegate.swift */,
 				60E732751E6AFDCD00AB2C7D /* OAuth.swift */,
 				60E732771E6B00C900AB2C7D /* StringExtension.swift */,
 			);
@@ -398,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60E732781E6B00C900AB2C7D /* StringExtension.swift in Sources */,
+				60E732AD1E6B2D6D00AB2C7D /* StreamingDataDelegate.swift in Sources */,
 				60E732761E6AFDCD00AB2C7D /* OAuth.swift in Sources */,
 				60E732701E6AFA3000AB2C7D /* Somen.swift in Sources */,
 			);
