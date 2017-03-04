@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CommonCrypto.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>Somen.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -28,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>60084D0A1E6AF57000D17A6F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>60E7327D1E6B054600AB2C7D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

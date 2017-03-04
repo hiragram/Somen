@@ -1,1 +1,2 @@
 github "ReactiveX/RxSwift" ~> 3.0.0
+github "soffes/Crypto" ~> 0.5.0
