@@ -19,7 +19,7 @@ public class Somen {
 
   fileprivate let urlSessionDelegate = SomenURLSessionDelegate.init()
 
-  init(consumerKey : String,
+  public init(consumerKey : String,
        consumerSecret : String,
        accessToken : String,
        accessTokenSecret : String) {
@@ -32,16 +32,20 @@ public extension Somen {
 
   func home() -> Observable<[String: Any]> {
     let configuration = URLSessionConfiguration.default
-    let session = URLSession.init(configuration: configuration, delegate: urlSessionDelegate, delegateQueue: nil)
+    let session = URLSession.init(configuration: configuration, delegate: nil, delegateQueue: nil)
     let url = URL.init(string: "https://userstream.twitter.com/1.1/user.json")!
     var request = URLRequest.init(url: url)
     let auth = OAuth.generateHeaderContents(request: request, credential: credential)
     request.allHTTPHeaderFields = ["Authorization": auth]
 
-    return session.rx.data(request: request)
-      .map({ (data) -> [String: Any] in
-        return try! JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [String: Any]
-    })
+    return session.rx.response(request: request).map { (response, data) -> [String: Any] in
+      return try! JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [String: Any]
+    }
+
+//    return session.rx.data(request: request)
+//      .map({ (data) -> [String: Any] in
+//        return try! JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [String: Any]
+//    })
   }
 
 }

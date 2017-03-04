@@ -23,10 +23,30 @@
 		60E7328D1E6B09A600AB2C7D /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E7328B1E6B09A600AB2C7D /* CommonCrypto.framework */; };
 		60E7328E1E6B09A600AB2C7D /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E7328C1E6B09A600AB2C7D /* Crypto.framework */; };
 		60E732901E6B0D4000AB2C7D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E7328F1E6B0D4000AB2C7D /* RxCocoa.framework */; };
+		60E7329B1E6B0F6F00AB2C7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7329A1E6B0F6F00AB2C7D /* AppDelegate.swift */; };
+		60E7329D1E6B0F6F00AB2C7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7329C1E6B0F6F00AB2C7D /* ViewController.swift */; };
+		60E7329F1E6B0F6F00AB2C7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E7329E1E6B0F6F00AB2C7D /* Assets.xcassets */; };
+		60E732A21E6B0F6F00AB2C7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E732A01E6B0F6F00AB2C7D /* Main.storyboard */; };
+		60E732A91E6B0FE500AB2C7D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E7328F1E6B0D4000AB2C7D /* RxCocoa.framework */; };
+		60E732AA1E6B0FE500AB2C7D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E732711E6AFA4700AB2C7D /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		60084CF81E6AF52300D17A6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60084CE41E6AF52300D17A6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60084CEC1E6AF52300D17A6F;
+			remoteInfo = Somen;
+		};
+		60E732911E6B0E0A00AB2C7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60084CE41E6AF52300D17A6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60084CEC1E6AF52300D17A6F;
+			remoteInfo = Somen;
+		};
+		60E732A71E6B0F7B00AB2C7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 60084CE41E6AF52300D17A6F /* Project object */;
 			proxyType = 1;
@@ -57,6 +77,12 @@
 		60E7328B1E6B09A600AB2C7D /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/Mac/CommonCrypto.framework; sourceTree = SOURCE_ROOT; };
 		60E7328C1E6B09A600AB2C7D /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crypto.framework; path = Carthage/Build/Mac/Crypto.framework; sourceTree = SOURCE_ROOT; };
 		60E7328F1E6B0D4000AB2C7D /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
+		60E732981E6B0F6F00AB2C7D /* SomenMacSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomenMacSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60E7329A1E6B0F6F00AB2C7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		60E7329C1E6B0F6F00AB2C7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		60E7329E1E6B0F6F00AB2C7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60E732A11E6B0F6F00AB2C7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60E732A31E6B0F6F00AB2C7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +112,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60E732951E6B0F6F00AB2C7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60E732AA1E6B0FE500AB2C7D /* RxSwift.framework in Frameworks */,
+				60E732A91E6B0FE500AB2C7D /* RxCocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -95,6 +130,7 @@
 				60084CEF1E6AF52300D17A6F /* Somen */,
 				60084CFA1E6AF52300D17A6F /* SomenTests */,
 				60084D0C1E6AF57000D17A6F /* SomenSample */,
+				60E732991E6B0F6F00AB2C7D /* SomenMacSample */,
 				60084CEE1E6AF52300D17A6F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,6 +141,7 @@
 				60084CED1E6AF52300D17A6F /* Somen.framework */,
 				60084CF61E6AF52300D17A6F /* SomenTests.xctest */,
 				60084D0B1E6AF57000D17A6F /* SomenSample.app */,
+				60E732981E6B0F6F00AB2C7D /* SomenMacSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,6 +183,18 @@
 				60084D191E6AF57000D17A6F /* Info.plist */,
 			);
 			path = SomenSample;
+			sourceTree = "<group>";
+		};
+		60E732991E6B0F6F00AB2C7D /* SomenMacSample */ = {
+			isa = PBXGroup;
+			children = (
+				60E7329A1E6B0F6F00AB2C7D /* AppDelegate.swift */,
+				60E7329C1E6B0F6F00AB2C7D /* ViewController.swift */,
+				60E7329E1E6B0F6F00AB2C7D /* Assets.xcassets */,
+				60E732A01E6B0F6F00AB2C7D /* Main.storyboard */,
+				60E732A31E6B0F6F00AB2C7D /* Info.plist */,
+			);
+			path = SomenMacSample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,10 +258,30 @@
 			buildRules = (
 			);
 			dependencies = (
+				60E732921E6B0E0A00AB2C7D /* PBXTargetDependency */,
 			);
 			name = SomenSample;
 			productName = SomenSample;
 			productReference = 60084D0B1E6AF57000D17A6F /* SomenSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		60E732971E6B0F6F00AB2C7D /* SomenMacSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60E732A41E6B0F6F00AB2C7D /* Build configuration list for PBXNativeTarget "SomenMacSample" */;
+			buildPhases = (
+				60E732941E6B0F6F00AB2C7D /* Sources */,
+				60E732951E6B0F6F00AB2C7D /* Frameworks */,
+				60E732961E6B0F6F00AB2C7D /* Resources */,
+				60E732AB1E6B103100AB2C7D /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60E732A81E6B0F7B00AB2C7D /* PBXTargetDependency */,
+			);
+			name = SomenMacSample;
+			productName = SomenMacSample;
+			productReference = 60E732981E6B0F6F00AB2C7D /* SomenMacSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -241,6 +310,11 @@
 						DevelopmentTeam = Q3N95Y73WF;
 						ProvisioningStyle = Automatic;
 					};
+					60E732971E6B0F6F00AB2C7D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Q3N95Y73WF;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 60084CE71E6AF52300D17A6F /* Build configuration list for PBXProject "Somen" */;
@@ -259,6 +333,7 @@
 				60084CEC1E6AF52300D17A6F /* Somen */,
 				60084CF51E6AF52300D17A6F /* SomenTests */,
 				60084D0A1E6AF57000D17A6F /* SomenSample */,
+				60E732971E6B0F6F00AB2C7D /* SomenMacSample */,
 			);
 		};
 /* End PBXProject section */
@@ -288,7 +363,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60E732961E6B0F6F00AB2C7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60E7329F1E6B0F6F00AB2C7D /* Assets.xcassets in Resources */,
+				60E732A21E6B0F6F00AB2C7D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60E732AB1E6B103100AB2C7D /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/Crypto.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/CommonCrypto.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60084CE81E6AF52300D17A6F /* Sources */ = {
@@ -319,6 +424,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60E732941E6B0F6F00AB2C7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60E7329D1E6B0F6F00AB2C7D /* ViewController.swift in Sources */,
+				60E7329B1E6B0F6F00AB2C7D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -326,6 +440,16 @@
 			isa = PBXTargetDependency;
 			target = 60084CEC1E6AF52300D17A6F /* Somen */;
 			targetProxy = 60084CF81E6AF52300D17A6F /* PBXContainerItemProxy */;
+		};
+		60E732921E6B0E0A00AB2C7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60084CEC1E6AF52300D17A6F /* Somen */;
+			targetProxy = 60E732911E6B0E0A00AB2C7D /* PBXContainerItemProxy */;
+		};
+		60E732A81E6B0F7B00AB2C7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60084CEC1E6AF52300D17A6F /* Somen */;
+			targetProxy = 60E732A71E6B0F7B00AB2C7D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -344,6 +468,14 @@
 				60084D171E6AF57000D17A6F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		60E732A01E6B0F6F00AB2C7D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60E732A11E6B0F6F00AB2C7D /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -468,6 +600,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yura.Somen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.12;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -497,6 +630,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yura.Somen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.12;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -563,6 +697,42 @@
 			};
 			name = Release;
 		};
+		60E732A51E6B0F6F00AB2C7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q3N95Y73WF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = SomenMacSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.yura.SomenMacSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		60E732A61E6B0F6F00AB2C7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q3N95Y73WF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = SomenMacSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.yura.SomenMacSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -601,6 +771,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		60E732A41E6B0F6F00AB2C7D /* Build configuration list for PBXNativeTarget "SomenMacSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60E732A51E6B0F6F00AB2C7D /* Debug */,
+				60E732A61E6B0F6F00AB2C7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

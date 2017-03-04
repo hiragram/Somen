@@ -28,7 +28,7 @@ struct OAuth {
 
 private extension OAuth {
   static func generateNonce() -> String {
-    return "\(Date.init().timeIntervalSince1970)\(Int(arc4random_uniform(999999)))"
+    return "\(Date.init().timeIntervalSince1970)\(arc4random_uniform(999999))".replacingOccurrences(of: ".", with: "")
   }
 
   static func generateSignature(request: URLRequest,credential c: Credential, nonce: String, timestamp: String, params: [String: String]) -> String {
@@ -46,7 +46,7 @@ private extension OAuth {
     }
 
     let paramsStr = signatureParams.keys.sorted().map { (key) -> String in
-      return "\(key)~\(signatureParams[key]!.urlEncoded)"
+      return "\(key)=\(signatureParams[key]!.urlEncoded)"
     }.joined(separator: "&").urlEncoded
 
     let httpMethod = request.httpMethod!

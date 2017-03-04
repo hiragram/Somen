@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>SomenMacSample.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>SomenSample.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -38,6 +43,11 @@
 			<true/>
 		</dict>
 		<key>60E7327D1E6B054600AB2C7D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>60E732971E6B0F6F00AB2C7D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
