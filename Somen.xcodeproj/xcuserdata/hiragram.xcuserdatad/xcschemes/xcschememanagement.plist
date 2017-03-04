@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>SomenSample.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>60084CF51E6AF52300D17A6F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>60084D0A1E6AF57000D17A6F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

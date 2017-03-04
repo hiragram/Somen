@@ -10,6 +10,11 @@
 		60084CF71E6AF52300D17A6F /* Somen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60084CED1E6AF52300D17A6F /* Somen.framework */; };
 		60084CFC1E6AF52300D17A6F /* SomenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60084CFB1E6AF52300D17A6F /* SomenTests.swift */; };
 		60084CFE1E6AF52300D17A6F /* Somen.h in Headers */ = {isa = PBXBuildFile; fileRef = 60084CF01E6AF52300D17A6F /* Somen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60084D0E1E6AF57000D17A6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60084D0D1E6AF57000D17A6F /* AppDelegate.swift */; };
+		60084D101E6AF57000D17A6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60084D0F1E6AF57000D17A6F /* ViewController.swift */; };
+		60084D131E6AF57000D17A6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60084D111E6AF57000D17A6F /* Main.storyboard */; };
+		60084D151E6AF57000D17A6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60084D141E6AF57000D17A6F /* Assets.xcassets */; };
+		60084D181E6AF57000D17A6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60084D161E6AF57000D17A6F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,13 @@
 		60084CF61E6AF52300D17A6F /* SomenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SomenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60084CFB1E6AF52300D17A6F /* SomenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomenTests.swift; sourceTree = "<group>"; };
 		60084CFD1E6AF52300D17A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60084D0B1E6AF57000D17A6F /* SomenSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomenSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60084D0D1E6AF57000D17A6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		60084D0F1E6AF57000D17A6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		60084D121E6AF57000D17A6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60084D141E6AF57000D17A6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60084D171E6AF57000D17A6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		60084D191E6AF57000D17A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60084D081E6AF57000D17A6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +74,7 @@
 			children = (
 				60084CEF1E6AF52300D17A6F /* Somen */,
 				60084CFA1E6AF52300D17A6F /* SomenTests */,
+				60084D0C1E6AF57000D17A6F /* SomenSample */,
 				60084CEE1E6AF52300D17A6F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +84,7 @@
 			children = (
 				60084CED1E6AF52300D17A6F /* Somen.framework */,
 				60084CF61E6AF52300D17A6F /* SomenTests.xctest */,
+				60084D0B1E6AF57000D17A6F /* SomenSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +105,19 @@
 				60084CFD1E6AF52300D17A6F /* Info.plist */,
 			);
 			path = SomenTests;
+			sourceTree = "<group>";
+		};
+		60084D0C1E6AF57000D17A6F /* SomenSample */ = {
+			isa = PBXGroup;
+			children = (
+				60084D0D1E6AF57000D17A6F /* AppDelegate.swift */,
+				60084D0F1E6AF57000D17A6F /* ViewController.swift */,
+				60084D111E6AF57000D17A6F /* Main.storyboard */,
+				60084D141E6AF57000D17A6F /* Assets.xcassets */,
+				60084D161E6AF57000D17A6F /* LaunchScreen.storyboard */,
+				60084D191E6AF57000D17A6F /* Info.plist */,
+			);
+			path = SomenSample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +170,23 @@
 			productReference = 60084CF61E6AF52300D17A6F /* SomenTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		60084D0A1E6AF57000D17A6F /* SomenSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60084D1A1E6AF57000D17A6F /* Build configuration list for PBXNativeTarget "SomenSample" */;
+			buildPhases = (
+				60084D071E6AF57000D17A6F /* Sources */,
+				60084D081E6AF57000D17A6F /* Frameworks */,
+				60084D091E6AF57000D17A6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SomenSample;
+			productName = SomenSample;
+			productReference = 60084D0B1E6AF57000D17A6F /* SomenSample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -156,6 +207,11 @@
 						DevelopmentTeam = Q3N95Y73WF;
 						ProvisioningStyle = Automatic;
 					};
+					60084D0A1E6AF57000D17A6F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Q3N95Y73WF;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 60084CE71E6AF52300D17A6F /* Build configuration list for PBXProject "Somen" */;
@@ -164,6 +220,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 60084CE31E6AF52300D17A6F;
 			productRefGroup = 60084CEE1E6AF52300D17A6F /* Products */;
@@ -172,6 +229,7 @@
 			targets = (
 				60084CEC1E6AF52300D17A6F /* Somen */,
 				60084CF51E6AF52300D17A6F /* SomenTests */,
+				60084D0A1E6AF57000D17A6F /* SomenSample */,
 			);
 		};
 /* End PBXProject section */
@@ -188,6 +246,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60084D091E6AF57000D17A6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60084D181E6AF57000D17A6F /* LaunchScreen.storyboard in Resources */,
+				60084D151E6AF57000D17A6F /* Assets.xcassets in Resources */,
+				60084D131E6AF57000D17A6F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +277,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60084D071E6AF57000D17A6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60084D101E6AF57000D17A6F /* ViewController.swift in Sources */,
+				60084D0E1E6AF57000D17A6F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -218,6 +295,25 @@
 			targetProxy = 60084CF81E6AF52300D17A6F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		60084D111E6AF57000D17A6F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60084D121E6AF57000D17A6F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		60084D161E6AF57000D17A6F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60084D171E6AF57000D17A6F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		60084CFF1E6AF52300D17A6F /* Debug */ = {
@@ -384,6 +480,39 @@
 			};
 			name = Release;
 		};
+		60084D1B1E6AF57000D17A6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Q3N95Y73WF;
+				INFOPLIST_FILE = SomenSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.yura.SomenSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		60084D1C1E6AF57000D17A6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Q3N95Y73WF;
+				INFOPLIST_FILE = SomenSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.yura.SomenSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -409,6 +538,14 @@
 			buildConfigurations = (
 				60084D051E6AF52300D17A6F /* Debug */,
 				60084D061E6AF52300D17A6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		60084D1A1E6AF57000D17A6F /* Build configuration list for PBXNativeTarget "SomenSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60084D1B1E6AF57000D17A6F /* Debug */,
+				60084D1C1E6AF57000D17A6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
