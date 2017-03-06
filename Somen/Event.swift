@@ -40,9 +40,11 @@ public enum Event {
   case quotedTweet(rawEvent: RawEvent)
 
   init?(rawEvent: RawEvent) {
-    if rawEvent.keys.contains("delete") {
+    if rawEvent.keys.contains("retweet_count") && rawEvent.keys.contains("favorite_count") {
+      self = .newStatus(rawEvent: rawEvent)
+    } else if rawEvent.keys.contains("delete") {
       self = .deleteStatus(rawEvent: rawEvent)
-    } else if rawEvent.keys.contains("scrub_get") {
+    } else if rawEvent.keys.contains("scrub_geo") {
       self = .deleteLocation(rawEvent: rawEvent)
     } else if rawEvent.keys.contains("limit") {
       self = .limitNotice(rawEvent: rawEvent)
@@ -54,7 +56,7 @@ public enum Event {
       self = .stallWarning(rawEvent: rawEvent)
     } else if rawEvent["event"] as? String == "user_update" {
       self = .userUpdate(rawEvent: rawEvent)
-    } else if rawEvent.keys.contains("friends") {
+    } else if rawEvent.keys.contains("friends") || rawEvent.keys.contains("friends_str") {
       self = .friends(rawEvent: rawEvent)
     } else if rawEvent["event"] as? String == "block" {
       self = .block(rawEvent: rawEvent)
@@ -76,12 +78,16 @@ public enum Event {
       self = .listUpdated(rawEvent: rawEvent)
     } else if rawEvent["event"] as? String == "list_member_added" {
       self = .listMemberAdded(rawEvent: rawEvent)
-    } else if rawEvent["event"] as? String == "list_memver_removed" {
+    } else if rawEvent["event"] as? String == "list_member_removed" {
       self = .listMemberRemoved(rawEvent: rawEvent)
     } else if rawEvent["event"] as? String == "list_user_subscribed" {
       self = .listUserSubscribed(rawEvent: rawEvent)
     } else if rawEvent["event"] as? String == "list_user_unsubscribed" {
       self = .listUserUnsubscribed(rawEvent: rawEvent)
+    } else if rawEvent["event"] as? String == "quoted_tweet" {
+      self = .quotedTweet(rawEvent: rawEvent)
+    } else if rawEvent.keys.contains("recipient") && rawEvent.keys.contains("sender") {
+      self = .directMessage(rawEvent: rawEvent)
     } else {
       return nil
     }
