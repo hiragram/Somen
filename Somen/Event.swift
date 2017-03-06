@@ -93,3 +93,64 @@ public enum Event {
     }
   }
 }
+
+extension Event {
+  enum Error: Swift.Error {
+    case mappingFailed(rawEvent: RawEvent)
+  }
+}
+
+extension Event: CustomStringConvertible {
+  public var description: String {
+    switch self {
+    case .newStatus(rawEvent: let e):
+      return "newStatus(\(e["text"] ?? ""))"
+    case .deleteStatus(rawEvent: let e):
+      return "deleteStatus"
+    case .deleteLocation(rawEvent: let e):
+      return "deleteLocation"
+    case .limitNotice(rawEvent: let e):
+      return "limitNotice"
+    case .statusWithheld(rawEvent: let e):
+      return "statusWithheld"
+    case .userWithheld(rawEvent: let e):
+      return "userWithheld"
+    case .stallWarning(rawEvent: let e):
+      return "stallWarning"
+    case .userUpdate(rawEvent: let e):
+      return "userUpdate"
+    case .friends(rawEvent: let e):
+      return "friends"
+    case .directMessage(rawEvent: let e):
+      return "directMessage"
+    case .block(rawEvent: let e):
+      return "block"
+    case .unblock(rawEvent: let e):
+      return "unblock"
+    case .favorite(rawEvent: let e):
+      return "favorite"
+    case .unfavorite(rawEvent: let e):
+      return "unfavorite"
+    case .follow(rawEvent: let e):
+      return "follow"
+    case .unfollow(rawEvent: let e):
+      return "unfollow"
+    case .listCreated(rawEvent: let e):
+      return "listCreated"
+    case .listDestroyed(rawEvent: let e):
+      return "listDestroyed"
+    case .listUpdated(rawEvent: let e):
+      return "listUpdated"
+    case .listMemberAdded(rawEvent: let e):
+      return "listMemberAdded"
+    case .listMemberRemoved(rawEvent: let e):
+      return "listMemberRemoved"
+    case .listUserSubscribed(rawEvent: let e):
+      return "listUserSubscribed"
+    case .listUserUnsubscribed(rawEvent: let e):
+      return "listUserUnsubscribed"
+    case .quotedTweet(rawEvent: let e):
+      return "quotedTweet"
+    }
+  }
+}

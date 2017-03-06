@@ -35,9 +35,8 @@ class ViewController: NSViewController {
   override func viewDidAppear() {
     super.viewDidAppear()
 
-    somen.home().subscribe(onNext: { (dict) in
-      let aaa = String.init(data: dict, encoding: .utf8)!
-      print(aaa)
+    somen.home().subscribe(onNext: { (event) in
+      print(event)
     }, onError: { (error) in
       print(error)
     }, onCompleted: { 
