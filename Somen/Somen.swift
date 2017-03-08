@@ -34,8 +34,6 @@ public extension Somen {
     let auth = OAuth.generateHeaderContents(request: request, credential: credential)
     let configuration = URLSessionConfiguration.default
 
-    var nextEvent = ""
-
     return Observable<Data>.create({ (observer) -> Disposable in
       let dataDelegate = StreamingDataDelegate.init(receivedDataHandler: { (session, task, data) in
         observer.onNext(data)
@@ -56,42 +54,7 @@ public extension Somen {
         }
         return receivedStr
       })
-      .map({ (str) -> [String] in
-        return str.components(separatedBy: "\r\n")
-      })
-      .scan([], accumulator: { (seed, added) -> [String] in
-        guard !added.isEmpty else {
-          return []
-        }
-        guard let first = added.first else {
-          return []
-        }
-        guard first != "" else {
-          return []
-        }
-
-        if added.count == 1 {
-          nextEvent += added.first!
-          return []
-        }
-
-        var completeJsons: [String] = []
-        completeJsons.append(nextEvent + first)
-
-        if let last = added.dropFirst().last {
-          nextEvent = last
-        }
-
-        added.dropFirst().dropLast().forEach({ (jsonStr) in
-          completeJsons.append(jsonStr)
-        })
-
-        return completeJsons
-      })
-      .flatMap({
-        Observable.from($0)
-      })
-      .filter({ $0 != "" })
+      .pollUntilNewline()
       .map({ (str) -> Data in
         guard let data = str.data(using: .utf8) else {
           throw NSError.init()
