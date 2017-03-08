@@ -39,7 +39,9 @@ public enum Event {
   case listUserUnsubscribed(rawEvent: RawEvent)
   case quotedTweet(rawEvent: RawEvent)
 
-  init?(rawEvent: RawEvent) {
+  case unsupportedEvent(rawEvent: RawEvent)
+
+  init(rawEvent: RawEvent) {
     if rawEvent.keys.contains("retweet_count") && rawEvent.keys.contains("favorite_count") {
       self = .newStatus(rawEvent: rawEvent)
     } else if rawEvent.keys.contains("delete") {
@@ -89,7 +91,7 @@ public enum Event {
     } else if rawEvent.keys.contains("recipient") && rawEvent.keys.contains("sender") {
       self = .directMessage(rawEvent: rawEvent)
     } else {
-      return nil
+      self = .unsupportedEvent(rawEvent: rawEvent)
     }
   }
 }
@@ -104,7 +106,12 @@ extension Event: CustomStringConvertible {
   public var description: String {
     switch self {
     case .newStatus(rawEvent: let e):
-      return "newStatus(\(e["text"] ?? ""))"
+      let user = e["user"] as? [String: Any]
+      let username = user?["screen_name"] as? String ?? ""
+      let status = (e["text"] as? String ?? "").replacingOccurrences(of: "\n", with: "")
+      let substringIndex = status.index(status.startIndex, offsetBy: status.characters.count > 30 ? 30 : status.characters.count)
+      let substring = status.substring(to: substringIndex)
+      return "newStatus(\(username): \"\(substring)\")"
     case .deleteStatus(rawEvent: let e):
       return "deleteStatus"
     case .deleteLocation(rawEvent: let e):
@@ -151,6 +158,8 @@ extension Event: CustomStringConvertible {
       return "listUserUnsubscribed"
     case .quotedTweet(rawEvent: let e):
       return "quotedTweet"
+    case .unsupportedEvent(rawEvent: let e):
+      return "unsupportedEvent"
     }
   }
 }

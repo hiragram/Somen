@@ -14,6 +14,9 @@
 		60084D131E6AF57000D17A6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60084D111E6AF57000D17A6F /* Main.storyboard */; };
 		60084D151E6AF57000D17A6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60084D141E6AF57000D17A6F /* Assets.xcassets */; };
 		60084D181E6AF57000D17A6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60084D161E6AF57000D17A6F /* LaunchScreen.storyboard */; };
+		60399E831E6FABFF004E6C4F /* StreamError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60399E821E6FABFF004E6C4F /* StreamError.swift */; };
+		60399E851E6FBC05004E6C4F /* OAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60399E841E6FBC05004E6C4F /* OAuthTests.swift */; };
+		60399E871E6FC1A3004E6C4F /* ObservableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60399E861E6FC1A3004E6C4F /* ObservableExtension.swift */; };
 		60E732701E6AFA3000AB2C7D /* Somen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7326F1E6AFA3000AB2C7D /* Somen.swift */; };
 		60E732721E6AFA4700AB2C7D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E732711E6AFA4700AB2C7D /* RxSwift.framework */; };
 		60E732761E6AFDCD00AB2C7D /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E732751E6AFDCD00AB2C7D /* OAuth.swift */; };
@@ -75,6 +78,9 @@
 		60084D141E6AF57000D17A6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60084D171E6AF57000D17A6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60084D191E6AF57000D17A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60399E821E6FABFF004E6C4F /* StreamError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamError.swift; sourceTree = "<group>"; };
+		60399E841E6FBC05004E6C4F /* OAuthTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthTests.swift; sourceTree = "<group>"; };
+		60399E861E6FC1A3004E6C4F /* ObservableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableExtension.swift; sourceTree = "<group>"; };
 		60E7326F1E6AFA3000AB2C7D /* Somen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Somen.swift; sourceTree = "<group>"; };
 		60E732711E6AFA4700AB2C7D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = SOURCE_ROOT; };
 		60E732751E6AFDCD00AB2C7D /* OAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
@@ -169,7 +175,9 @@
 				60084CF01E6AF52300D17A6F /* Somen.h */,
 				60084CF11E6AF52300D17A6F /* Info.plist */,
 				60E7326F1E6AFA3000AB2C7D /* Somen.swift */,
+				60399E861E6FC1A3004E6C4F /* ObservableExtension.swift */,
 				60E732AE1E6B8B0F00AB2C7D /* Event.swift */,
+				60399E821E6FABFF004E6C4F /* StreamError.swift */,
 				60E732AC1E6B2D6D00AB2C7D /* StreamingDataDelegate.swift */,
 				60E732751E6AFDCD00AB2C7D /* OAuth.swift */,
 				60E732771E6B00C900AB2C7D /* StringExtension.swift */,
@@ -182,6 +190,7 @@
 			children = (
 				60E732B01E6BDABD00AB2C7D /* Nimble.framework */,
 				60084CFB1E6AF52300D17A6F /* SomenTests.swift */,
+				60399E841E6FBC05004E6C4F /* OAuthTests.swift */,
 				60084CFD1E6AF52300D17A6F /* Info.plist */,
 			);
 			path = SomenTests;
@@ -435,10 +444,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60399E871E6FC1A3004E6C4F /* ObservableExtension.swift in Sources */,
 				60E732781E6B00C900AB2C7D /* StringExtension.swift in Sources */,
 				60E732AD1E6B2D6D00AB2C7D /* StreamingDataDelegate.swift in Sources */,
 				60E732761E6AFDCD00AB2C7D /* OAuth.swift in Sources */,
 				60E732701E6AFA3000AB2C7D /* Somen.swift in Sources */,
+				60399E831E6FABFF004E6C4F /* StreamError.swift in Sources */,
 				60E732AF1E6B8B0F00AB2C7D /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60084CFC1E6AF52300D17A6F /* SomenTests.swift in Sources */,
+				60399E851E6FBC05004E6C4F /* OAuthTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,9 +9,8 @@
 import Foundation
 
 struct OAuth {
-  static func generateHeaderContents(request: URLRequest, credential c: Credential) -> String {
-    let nonce = generateNonce()
-    let timestamp = "\(Int(Date.init().timeIntervalSince1970))"
+  static func generateHeaderContents(request: URLRequest, credential c: Credential, timestamp: Int = Int(Date.init().timeIntervalSince1970), nonce: String = OAuth.generateNonce()) -> String {
+    let timestamp = "\(timestamp)"
     let signature = generateSignature(request: request, credential: c, nonce: nonce, timestamp: timestamp, params: [:])
     let content = "OAuth realm=*, "
       + "oauth_consumer_key=\"\(c.consumerKey.urlEncoded)\", "

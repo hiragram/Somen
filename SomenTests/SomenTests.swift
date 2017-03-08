@@ -57,10 +57,7 @@ class SomenTests: XCTestCase {
         return
       }
       let dict = getDict(fromJSONString: sampleJson)
-      guard let event = Event.init(rawEvent: dict) else {
-        fail("Failed to parse pattern \(index). Json is \(sampleJson)")
-        return
-      }
+      let event = Event.init(rawEvent: dict)
       expect(event.hashValue).to(equal(pattern.hashValue))
     }
   }
@@ -123,6 +120,8 @@ private extension Event {
       return "{\"event\":\"list_user_unsubscribed\",\"created_at\":\"Sat Sep 4 16:10:54 +0000 2010\",\"target\":{},\"source\":{},\"target_object\":{}}"
     case .quotedTweet:
       return "{\"event\":\"quoted_tweet\",\"created_at\":\"Sat Sep 4 16:10:54 +0000 2010\",\"target\":{},\"source\":{},\"target_object\":{}}"
+    case .unsupportedEvent(rawEvent: _):
+      return nil
     }
   }
 
@@ -176,6 +175,8 @@ private extension Event {
       return 23
     case .quotedTweet:
       return 24
+    case .unsupportedEvent:
+      return 25
     }
   }
 }

@@ -46,32 +46,16 @@ public extension Somen {
       let task = session.dataTask(with: request)
       task.resume()
 
-      return Disposables.create()
+      return Disposables.create {
+        task.cancel()
+      }
     })
-      // encode data into string
       .map({ (data) -> String in
         guard let receivedStr = String.init(data: data, encoding: .utf8) else {
           throw Error.jsonParseFailed(failedData: data) // TODO 「エンコード失敗」を作る
         }
         return receivedStr
       })
-
-//      return Observable<Int>.interval(1, scheduler: MainScheduler.instance)
-//        .map({ (index) -> String in
-//          let texts = [
-//            "aaaaaaaaaaaaaaaaaaaaaaaaaaa\r\n",
-//            "bbbbbbbbbbbbbbbbbbbbbbbbbbb",
-//            "ccccccccccccccccccccccccccc",
-//          ]
-//
-//          return texts[index % texts.count]
-//        })
-
-//      .do(onNext: { (receivedStr) in
-//        print("received: \(receivedStr)")
-//        print("----------------")
-//      })
-
       .map({ (str) -> [String] in
         return str.components(separatedBy: "\r\n")
       })
@@ -108,25 +92,21 @@ public extension Somen {
         Observable.from($0)
       })
       .filter({ $0 != "" })
-//      .do(onNext: { (str) in
-//        print("received: \"\(str)\"")
-//      })
       .map({ (str) -> Data in
         guard let data = str.data(using: .utf8) else {
           throw NSError.init()
         }
         return data
       })
-
       .map({ (data) -> Event in
         guard let jsonDict = try JSONSerialization.jsonObject(with: data, options: []) as? Event.RawEvent else {
           throw Error.jsonParseFailed(failedData: data)
         }
-        guard let event = Event.init(rawEvent: jsonDict) else {
-          throw Event.Error.mappingFailed(rawEvent: jsonDict)
+        if jsonDict.keys.contains("disconnect") {
+          throw StreamError.init(rawError: jsonDict)
         }
 
-        return event
+        return Event.init(rawEvent: jsonDict)
       })
   }
 
