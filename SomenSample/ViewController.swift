@@ -31,7 +31,9 @@ class ViewController: UIViewController {
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-
+    somen.home().subscribe(onNext: { (event) in
+      print(event)
+    }).addDisposableTo(bag)
   }
 
 }
