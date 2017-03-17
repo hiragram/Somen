@@ -1,4 +1,4 @@
 github "Quick/Nimble" "v6.0.1"
-github "ReactiveX/RxSwift" "3.2.0"
+github "ReactiveX/RxSwift" "3.3.1"
 github "soffes/CommonCrypto" "v1.1.0"
 github "soffes/Crypto" "v0.5.1"
