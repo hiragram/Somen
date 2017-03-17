@@ -34,7 +34,7 @@
 		60E732AD1E6B2D6D00AB2C7D /* StreamingDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E732AC1E6B2D6D00AB2C7D /* StreamingDataDelegate.swift */; };
 		60E732AF1E6B8B0F00AB2C7D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E732AE1E6B8B0F00AB2C7D /* Event.swift */; };
 		60E732B11E6BDABD00AB2C7D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E732B01E6BDABD00AB2C7D /* Nimble.framework */; };
-		60E732B31E6BDB5100AB2C7D /* Somen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60084CED1E6AF52300D17A6F /* Somen.framework */; };
+		60E732B31E6BDB5100AB2C7D /* Somen-macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60084CED1E6AF52300D17A6F /* Somen-macOS.framework */; };
 		60E732B41E6BDC7900AB2C7D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E7328F1E6B0D4000AB2C7D /* RxCocoa.framework */; };
 		60E732B51E6BDC7900AB2C7D /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E7328B1E6B09A600AB2C7D /* CommonCrypto.framework */; };
 		60E732B61E6BDC7900AB2C7D /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E7328C1E6B09A600AB2C7D /* Crypto.framework */; };
@@ -66,7 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		60084CED1E6AF52300D17A6F /* Somen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Somen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60084CED1E6AF52300D17A6F /* Somen-macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Somen-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60084CF01E6AF52300D17A6F /* Somen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Somen.h; sourceTree = "<group>"; };
 		60084CF11E6AF52300D17A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60084CF61E6AF52300D17A6F /* SomenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SomenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,7 +122,7 @@
 				60E732B71E6BDC7900AB2C7D /* RxSwift.framework in Frameworks */,
 				60E732B41E6BDC7900AB2C7D /* RxCocoa.framework in Frameworks */,
 				60E732B11E6BDABD00AB2C7D /* Nimble.framework in Frameworks */,
-				60E732B31E6BDB5100AB2C7D /* Somen.framework in Frameworks */,
+				60E732B31E6BDB5100AB2C7D /* Somen-macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +159,7 @@
 		60084CEE1E6AF52300D17A6F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				60084CED1E6AF52300D17A6F /* Somen.framework */,
+				60084CED1E6AF52300D17A6F /* Somen-macOS.framework */,
 				60084CF61E6AF52300D17A6F /* SomenTests.xctest */,
 				60084D0B1E6AF57000D17A6F /* SomenSample.app */,
 				60E732981E6B0F6F00AB2C7D /* SomenMacSample.app */,
@@ -238,9 +238,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		60084CEC1E6AF52300D17A6F /* Somen */ = {
+		60084CEC1E6AF52300D17A6F /* Somen-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 60084D011E6AF52300D17A6F /* Build configuration list for PBXNativeTarget "Somen" */;
+			buildConfigurationList = 60084D011E6AF52300D17A6F /* Build configuration list for PBXNativeTarget "Somen-macOS" */;
 			buildPhases = (
 				60084CE81E6AF52300D17A6F /* Sources */,
 				60084CE91E6AF52300D17A6F /* Frameworks */,
@@ -251,9 +251,9 @@
 			);
 			dependencies = (
 			);
-			name = Somen;
+			name = "Somen-macOS";
 			productName = Somen;
-			productReference = 60084CED1E6AF52300D17A6F /* Somen.framework */;
+			productReference = 60084CED1E6AF52300D17A6F /* Somen-macOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		60084CF51E6AF52300D17A6F /* SomenTests */ = {
@@ -358,7 +358,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				60084CEC1E6AF52300D17A6F /* Somen */,
+				60084CEC1E6AF52300D17A6F /* Somen-macOS */,
 				60084CF51E6AF52300D17A6F /* SomenTests */,
 				60084D0A1E6AF57000D17A6F /* SomenSample */,
 				60E732971E6B0F6F00AB2C7D /* SomenMacSample */,
@@ -490,17 +490,17 @@
 /* Begin PBXTargetDependency section */
 		60084CF91E6AF52300D17A6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 60084CEC1E6AF52300D17A6F /* Somen */;
+			target = 60084CEC1E6AF52300D17A6F /* Somen-macOS */;
 			targetProxy = 60084CF81E6AF52300D17A6F /* PBXContainerItemProxy */;
 		};
 		60E732921E6B0E0A00AB2C7D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 60084CEC1E6AF52300D17A6F /* Somen */;
+			target = 60084CEC1E6AF52300D17A6F /* Somen-macOS */;
 			targetProxy = 60E732911E6B0E0A00AB2C7D /* PBXContainerItemProxy */;
 		};
 		60E732A81E6B0F7B00AB2C7D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 60084CEC1E6AF52300D17A6F /* Somen */;
+			target = 60084CEC1E6AF52300D17A6F /* Somen-macOS */;
 			targetProxy = 60E732A71E6B0F7B00AB2C7D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -805,7 +805,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		60084D011E6AF52300D17A6F /* Build configuration list for PBXNativeTarget "Somen" */ = {
+		60084D011E6AF52300D17A6F /* Build configuration list for PBXNativeTarget "Somen-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60084D021E6AF52300D17A6F /* Debug */,
