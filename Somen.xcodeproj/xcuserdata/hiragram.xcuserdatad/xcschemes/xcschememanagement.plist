@@ -9,7 +9,12 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>Somen.xcscheme_^#shared#^_</key>
+		<key>Somen-iOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Somen-macOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -38,6 +43,11 @@
 			<true/>
 		</dict>
 		<key>60084D0A1E6AF57000D17A6F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>60A8071A1E7C46A6003EB154</key>
 		<dict>
 			<key>primary</key>
 			<true/>

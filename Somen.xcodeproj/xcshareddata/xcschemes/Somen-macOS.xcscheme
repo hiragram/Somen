@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "60084CEC1E6AF52300D17A6F"
                BuildableName = "Somen.framework"
-               BlueprintName = "Somen"
+               BlueprintName = "Somen-macOS"
                ReferencedContainer = "container:Somen.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,29 +26,9 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "60084CF51E6AF52300D17A6F"
-               BuildableName = "SomenTests.xctest"
-               BlueprintName = "SomenTests"
-               ReferencedContainer = "container:Somen.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "60084CEC1E6AF52300D17A6F"
-            BuildableName = "Somen.framework"
-            BlueprintName = "Somen"
-            ReferencedContainer = "container:Somen.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -67,7 +47,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "60084CEC1E6AF52300D17A6F"
             BuildableName = "Somen.framework"
-            BlueprintName = "Somen"
+            BlueprintName = "Somen-macOS"
             ReferencedContainer = "container:Somen.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -85,7 +65,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "60084CEC1E6AF52300D17A6F"
             BuildableName = "Somen.framework"
-            BlueprintName = "Somen"
+            BlueprintName = "Somen-macOS"
             ReferencedContainer = "container:Somen.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
