@@ -8,16 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		60084CFC1E6AF52300D17A6F /* SomenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60084CFB1E6AF52300D17A6F /* SomenTests.swift */; };
-		60084CFE1E6AF52300D17A6F /* Somen.h in Headers */ = {isa = PBXBuildFile; fileRef = 60084CF01E6AF52300D17A6F /* Somen.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		60084D0E1E6AF57000D17A6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60084D0D1E6AF57000D17A6F /* AppDelegate.swift */; };
 		60084D101E6AF57000D17A6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60084D0F1E6AF57000D17A6F /* ViewController.swift */; };
 		60084D131E6AF57000D17A6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60084D111E6AF57000D17A6F /* Main.storyboard */; };
 		60084D151E6AF57000D17A6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60084D141E6AF57000D17A6F /* Assets.xcassets */; };
 		60084D181E6AF57000D17A6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60084D161E6AF57000D17A6F /* LaunchScreen.storyboard */; };
+		6011A3771E7C4D3A0061F3A6 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A807351E7C4C36003EB154 /* RxCocoa.framework */; };
+		6011A3781E7C4D3A0061F3A6 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A807361E7C4C36003EB154 /* RxSwift.framework */; };
 		60399E831E6FABFF004E6C4F /* StreamError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60399E821E6FABFF004E6C4F /* StreamError.swift */; };
 		60399E851E6FBC05004E6C4F /* OAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60399E841E6FBC05004E6C4F /* OAuthTests.swift */; };
 		60399E871E6FC1A3004E6C4F /* ObservableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60399E861E6FC1A3004E6C4F /* ObservableExtension.swift */; };
 		60399E891E6FF0B6004E6C4F /* ObservableExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60399E881E6FF0B6004E6C4F /* ObservableExtensionTests.swift */; };
+		60A807221E7C46A6003EB154 /* Somen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A8071B1E7C46A6003EB154 /* Somen.framework */; };
+		60A807231E7C46A6003EB154 /* Somen.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60A8071B1E7C46A6003EB154 /* Somen.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60A8072A1E7C4B25003EB154 /* Somen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7326F1E6AFA3000AB2C7D /* Somen.swift */; };
+		60A8072B1E7C4B25003EB154 /* ObservableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60399E861E6FC1A3004E6C4F /* ObservableExtension.swift */; };
+		60A8072C1E7C4B25003EB154 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E732AE1E6B8B0F00AB2C7D /* Event.swift */; };
+		60A8072D1E7C4B25003EB154 /* StreamError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60399E821E6FABFF004E6C4F /* StreamError.swift */; };
+		60A8072E1E7C4B25003EB154 /* StreamingDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E732AC1E6B2D6D00AB2C7D /* StreamingDataDelegate.swift */; };
+		60A8072F1E7C4B25003EB154 /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E732751E6AFDCD00AB2C7D /* OAuth.swift */; };
+		60A807301E7C4B25003EB154 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E732771E6B00C900AB2C7D /* StringExtension.swift */; };
+		60A807371E7C4C36003EB154 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A807331E7C4C36003EB154 /* CommonCrypto.framework */; };
+		60A807381E7C4C36003EB154 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A807341E7C4C36003EB154 /* Crypto.framework */; };
+		60A807391E7C4C36003EB154 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A807351E7C4C36003EB154 /* RxCocoa.framework */; };
+		60A8073A1E7C4C37003EB154 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A807361E7C4C36003EB154 /* RxSwift.framework */; };
 		60E732701E6AFA3000AB2C7D /* Somen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7326F1E6AFA3000AB2C7D /* Somen.swift */; };
 		60E732721E6AFA4700AB2C7D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E732711E6AFA4700AB2C7D /* RxSwift.framework */; };
 		60E732761E6AFDCD00AB2C7D /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E732751E6AFDCD00AB2C7D /* OAuth.swift */; };
@@ -49,12 +63,12 @@
 			remoteGlobalIDString = 60084CEC1E6AF52300D17A6F;
 			remoteInfo = Somen;
 		};
-		60E732911E6B0E0A00AB2C7D /* PBXContainerItemProxy */ = {
+		60A807201E7C46A6003EB154 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 60084CE41E6AF52300D17A6F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 60084CEC1E6AF52300D17A6F;
-			remoteInfo = Somen;
+			remoteGlobalIDString = 60A8071A1E7C46A6003EB154;
+			remoteInfo = "Somen-iOS";
 		};
 		60E732A71E6B0F7B00AB2C7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -64,6 +78,20 @@
 			remoteInfo = Somen;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		60A807271E7C46A6003EB154 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				60A807231E7C46A6003EB154 /* Somen.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		60084CED1E6AF52300D17A6F /* Somen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Somen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +111,11 @@
 		60399E841E6FBC05004E6C4F /* OAuthTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthTests.swift; sourceTree = "<group>"; };
 		60399E861E6FC1A3004E6C4F /* ObservableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableExtension.swift; sourceTree = "<group>"; };
 		60399E881E6FF0B6004E6C4F /* ObservableExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableExtensionTests.swift; sourceTree = "<group>"; };
+		60A8071B1E7C46A6003EB154 /* Somen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Somen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60A807331E7C4C36003EB154 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/iOS/CommonCrypto.framework; sourceTree = "<group>"; };
+		60A807341E7C4C36003EB154 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crypto.framework; path = Carthage/Build/iOS/Crypto.framework; sourceTree = "<group>"; };
+		60A807351E7C4C36003EB154 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		60A807361E7C4C36003EB154 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		60E7326F1E6AFA3000AB2C7D /* Somen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Somen.swift; sourceTree = "<group>"; };
 		60E732711E6AFA4700AB2C7D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = SOURCE_ROOT; };
 		60E732751E6AFDCD00AB2C7D /* OAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
@@ -130,6 +163,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6011A3771E7C4D3A0061F3A6 /* RxCocoa.framework in Frameworks */,
+				60A807221E7C46A6003EB154 /* Somen.framework in Frameworks */,
+				6011A3781E7C4D3A0061F3A6 /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60A807171E7C46A6003EB154 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60A8073A1E7C4C37003EB154 /* RxSwift.framework in Frameworks */,
+				60A807391E7C4C36003EB154 /* RxCocoa.framework in Frameworks */,
+				60A807371E7C4C36003EB154 /* CommonCrypto.framework in Frameworks */,
+				60A807381E7C4C36003EB154 /* Crypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +200,7 @@
 				60084D0C1E6AF57000D17A6F /* SomenSample */,
 				60E732991E6B0F6F00AB2C7D /* SomenMacSample */,
 				60084CEE1E6AF52300D17A6F /* Products */,
+				60A807311E7C4BDD003EB154 /* Dependency */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +211,7 @@
 				60084CF61E6AF52300D17A6F /* SomenTests.xctest */,
 				60084D0B1E6AF57000D17A6F /* SomenSample.app */,
 				60E732981E6B0F6F00AB2C7D /* SomenMacSample.app */,
+				60A8071B1E7C46A6003EB154 /* Somen.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,10 +219,6 @@
 		60084CEF1E6AF52300D17A6F /* Somen */ = {
 			isa = PBXGroup;
 			children = (
-				60E7328F1E6B0D4000AB2C7D /* RxCocoa.framework */,
-				60E7328B1E6B09A600AB2C7D /* CommonCrypto.framework */,
-				60E7328C1E6B09A600AB2C7D /* Crypto.framework */,
-				60E732711E6AFA4700AB2C7D /* RxSwift.framework */,
 				60084CF01E6AF52300D17A6F /* Somen.h */,
 				60084CF11E6AF52300D17A6F /* Info.plist */,
 				60E7326F1E6AFA3000AB2C7D /* Somen.swift */,
@@ -212,6 +257,37 @@
 			path = SomenSample;
 			sourceTree = "<group>";
 		};
+		60A807311E7C4BDD003EB154 /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				60A8073B1E7C4C3B003EB154 /* iOS */,
+				60A807321E7C4C00003EB154 /* macOS */,
+			);
+			name = Dependency;
+			sourceTree = "<group>";
+		};
+		60A807321E7C4C00003EB154 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				60E7328F1E6B0D4000AB2C7D /* RxCocoa.framework */,
+				60E7328B1E6B09A600AB2C7D /* CommonCrypto.framework */,
+				60E7328C1E6B09A600AB2C7D /* Crypto.framework */,
+				60E732711E6AFA4700AB2C7D /* RxSwift.framework */,
+			);
+			name = macOS;
+			sourceTree = "<group>";
+		};
+		60A8073B1E7C4C3B003EB154 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				60A807331E7C4C36003EB154 /* CommonCrypto.framework */,
+				60A807341E7C4C36003EB154 /* Crypto.framework */,
+				60A807351E7C4C36003EB154 /* RxCocoa.framework */,
+				60A807361E7C4C36003EB154 /* RxSwift.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		60E732991E6B0F6F00AB2C7D /* SomenMacSample */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,16 +307,22 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60084CFE1E6AF52300D17A6F /* Somen.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60A807181E7C46A6003EB154 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		60084CEC1E6AF52300D17A6F /* Somen */ = {
+		60084CEC1E6AF52300D17A6F /* Somen-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 60084D011E6AF52300D17A6F /* Build configuration list for PBXNativeTarget "Somen" */;
+			buildConfigurationList = 60084D011E6AF52300D17A6F /* Build configuration list for PBXNativeTarget "Somen-macOS" */;
 			buildPhases = (
 				60084CE81E6AF52300D17A6F /* Sources */,
 				60084CE91E6AF52300D17A6F /* Frameworks */,
@@ -251,7 +333,7 @@
 			);
 			dependencies = (
 			);
-			name = Somen;
+			name = "Somen-macOS";
 			productName = Somen;
 			productReference = 60084CED1E6AF52300D17A6F /* Somen.framework */;
 			productType = "com.apple.product-type.framework";
@@ -282,16 +364,36 @@
 				60084D071E6AF57000D17A6F /* Sources */,
 				60084D081E6AF57000D17A6F /* Frameworks */,
 				60084D091E6AF57000D17A6F /* Resources */,
+				60A807271E7C46A6003EB154 /* Embed Frameworks */,
+				6011A3791E7C4D9B0061F3A6 /* Carthage */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				60E732921E6B0E0A00AB2C7D /* PBXTargetDependency */,
+				60A807211E7C46A6003EB154 /* PBXTargetDependency */,
 			);
 			name = SomenSample;
 			productName = SomenSample;
 			productReference = 60084D0B1E6AF57000D17A6F /* SomenSample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		60A8071A1E7C46A6003EB154 /* Somen-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60A807241E7C46A6003EB154 /* Build configuration list for PBXNativeTarget "Somen-iOS" */;
+			buildPhases = (
+				60A807161E7C46A6003EB154 /* Sources */,
+				60A807171E7C46A6003EB154 /* Frameworks */,
+				60A807181E7C46A6003EB154 /* Headers */,
+				60A807191E7C46A6003EB154 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Somen-iOS";
+			productName = "Somen-iOS";
+			productReference = 60A8071B1E7C46A6003EB154 /* Somen.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		60E732971E6B0F6F00AB2C7D /* SomenMacSample */ = {
 			isa = PBXNativeTarget;
@@ -338,6 +440,11 @@
 						DevelopmentTeam = Q3N95Y73WF;
 						ProvisioningStyle = Automatic;
 					};
+					60A8071A1E7C46A6003EB154 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Q3N95Y73WF;
+						ProvisioningStyle = Automatic;
+					};
 					60E732971E6B0F6F00AB2C7D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = Q3N95Y73WF;
@@ -358,7 +465,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				60084CEC1E6AF52300D17A6F /* Somen */,
+				60084CEC1E6AF52300D17A6F /* Somen-macOS */,
+				60A8071A1E7C46A6003EB154 /* Somen-iOS */,
 				60084CF51E6AF52300D17A6F /* SomenTests */,
 				60084D0A1E6AF57000D17A6F /* SomenSample */,
 				60E732971E6B0F6F00AB2C7D /* SomenMacSample */,
@@ -391,6 +499,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60A807191E7C46A6003EB154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		60E732961E6B0F6F00AB2C7D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -403,6 +518,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6011A3791E7C4D9B0061F3A6 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CommonCrypto.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Crypto.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks\n";
+		};
 		60E732AB1E6B103100AB2C7D /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -476,6 +609,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60A807161E7C46A6003EB154 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60A8072B1E7C4B25003EB154 /* ObservableExtension.swift in Sources */,
+				60A807301E7C4B25003EB154 /* StringExtension.swift in Sources */,
+				60A8072C1E7C4B25003EB154 /* Event.swift in Sources */,
+				60A8072D1E7C4B25003EB154 /* StreamError.swift in Sources */,
+				60A8072F1E7C4B25003EB154 /* OAuth.swift in Sources */,
+				60A8072E1E7C4B25003EB154 /* StreamingDataDelegate.swift in Sources */,
+				60A8072A1E7C4B25003EB154 /* Somen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		60E732941E6B0F6F00AB2C7D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -490,17 +637,17 @@
 /* Begin PBXTargetDependency section */
 		60084CF91E6AF52300D17A6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 60084CEC1E6AF52300D17A6F /* Somen */;
+			target = 60084CEC1E6AF52300D17A6F /* Somen-macOS */;
 			targetProxy = 60084CF81E6AF52300D17A6F /* PBXContainerItemProxy */;
 		};
-		60E732921E6B0E0A00AB2C7D /* PBXTargetDependency */ = {
+		60A807211E7C46A6003EB154 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 60084CEC1E6AF52300D17A6F /* Somen */;
-			targetProxy = 60E732911E6B0E0A00AB2C7D /* PBXContainerItemProxy */;
+			target = 60A8071A1E7C46A6003EB154 /* Somen-iOS */;
+			targetProxy = 60A807201E7C46A6003EB154 /* PBXContainerItemProxy */;
 		};
 		60E732A81E6B0F7B00AB2C7D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 60084CEC1E6AF52300D17A6F /* Somen */;
+			target = 60084CEC1E6AF52300D17A6F /* Somen-macOS */;
 			targetProxy = 60E732A71E6B0F7B00AB2C7D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -651,7 +798,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yura.Somen;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Somen;
 				SDKROOT = macosx10.12;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -681,7 +828,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yura.Somen;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Somen;
 				SDKROOT = macosx10.12;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -727,9 +874,14 @@
 		60084D1B1E6AF57000D17A6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = Q3N95Y73WF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SomenSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -743,9 +895,14 @@
 		60084D1C1E6AF57000D17A6F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = Q3N95Y73WF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SomenSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -753,6 +910,61 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60A807251E7C46A6003EB154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Q3N95Y73WF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Somen/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.yura.Somen-iOS";
+				PRODUCT_NAME = Somen;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60A807261E7C46A6003EB154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Q3N95Y73WF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Somen/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.yura.Somen-iOS";
+				PRODUCT_NAME = Somen;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -805,7 +1017,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		60084D011E6AF52300D17A6F /* Build configuration list for PBXNativeTarget "Somen" */ = {
+		60084D011E6AF52300D17A6F /* Build configuration list for PBXNativeTarget "Somen-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60084D021E6AF52300D17A6F /* Debug */,
@@ -828,6 +1040,15 @@
 			buildConfigurations = (
 				60084D1B1E6AF57000D17A6F /* Debug */,
 				60084D1C1E6AF57000D17A6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60A807241E7C46A6003EB154 /* Build configuration list for PBXNativeTarget "Somen-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60A807251E7C46A6003EB154 /* Debug */,
+				60A807261E7C46A6003EB154 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
