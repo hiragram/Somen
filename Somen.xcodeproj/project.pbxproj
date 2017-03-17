@@ -18,6 +18,9 @@
 		60399E851E6FBC05004E6C4F /* OAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60399E841E6FBC05004E6C4F /* OAuthTests.swift */; };
 		60399E871E6FC1A3004E6C4F /* ObservableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60399E861E6FC1A3004E6C4F /* ObservableExtension.swift */; };
 		60399E891E6FF0B6004E6C4F /* ObservableExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60399E881E6FF0B6004E6C4F /* ObservableExtensionTests.swift */; };
+		60A807221E7C46A6003EB154 /* Somen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A8071B1E7C46A6003EB154 /* Somen.framework */; };
+		60A807231E7C46A6003EB154 /* Somen.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60A8071B1E7C46A6003EB154 /* Somen.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60A807291E7C4784003EB154 /* Somen.h in Headers */ = {isa = PBXBuildFile; fileRef = 60084CF01E6AF52300D17A6F /* Somen.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		60E732701E6AFA3000AB2C7D /* Somen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7326F1E6AFA3000AB2C7D /* Somen.swift */; };
 		60E732721E6AFA4700AB2C7D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E732711E6AFA4700AB2C7D /* RxSwift.framework */; };
 		60E732761E6AFDCD00AB2C7D /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E732751E6AFDCD00AB2C7D /* OAuth.swift */; };
@@ -34,7 +37,7 @@
 		60E732AD1E6B2D6D00AB2C7D /* StreamingDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E732AC1E6B2D6D00AB2C7D /* StreamingDataDelegate.swift */; };
 		60E732AF1E6B8B0F00AB2C7D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E732AE1E6B8B0F00AB2C7D /* Event.swift */; };
 		60E732B11E6BDABD00AB2C7D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E732B01E6BDABD00AB2C7D /* Nimble.framework */; };
-		60E732B31E6BDB5100AB2C7D /* Somen-macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60084CED1E6AF52300D17A6F /* Somen-macOS.framework */; };
+		60E732B31E6BDB5100AB2C7D /* Somen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60084CED1E6AF52300D17A6F /* Somen.framework */; };
 		60E732B41E6BDC7900AB2C7D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E7328F1E6B0D4000AB2C7D /* RxCocoa.framework */; };
 		60E732B51E6BDC7900AB2C7D /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E7328B1E6B09A600AB2C7D /* CommonCrypto.framework */; };
 		60E732B61E6BDC7900AB2C7D /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E7328C1E6B09A600AB2C7D /* Crypto.framework */; };
@@ -48,6 +51,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 60084CEC1E6AF52300D17A6F;
 			remoteInfo = Somen;
+		};
+		60A807201E7C46A6003EB154 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60084CE41E6AF52300D17A6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60A8071A1E7C46A6003EB154;
+			remoteInfo = "Somen-iOS";
 		};
 		60E732911E6B0E0A00AB2C7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,8 +75,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		60A807271E7C46A6003EB154 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				60A807231E7C46A6003EB154 /* Somen.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		60084CED1E6AF52300D17A6F /* Somen-macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Somen-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60084CED1E6AF52300D17A6F /* Somen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Somen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60084CF01E6AF52300D17A6F /* Somen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Somen.h; sourceTree = "<group>"; };
 		60084CF11E6AF52300D17A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60084CF61E6AF52300D17A6F /* SomenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SomenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +107,7 @@
 		60399E841E6FBC05004E6C4F /* OAuthTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthTests.swift; sourceTree = "<group>"; };
 		60399E861E6FC1A3004E6C4F /* ObservableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableExtension.swift; sourceTree = "<group>"; };
 		60399E881E6FF0B6004E6C4F /* ObservableExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableExtensionTests.swift; sourceTree = "<group>"; };
+		60A8071B1E7C46A6003EB154 /* Somen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Somen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E7326F1E6AFA3000AB2C7D /* Somen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Somen.swift; sourceTree = "<group>"; };
 		60E732711E6AFA4700AB2C7D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = SOURCE_ROOT; };
 		60E732751E6AFDCD00AB2C7D /* OAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
@@ -122,11 +147,19 @@
 				60E732B71E6BDC7900AB2C7D /* RxSwift.framework in Frameworks */,
 				60E732B41E6BDC7900AB2C7D /* RxCocoa.framework in Frameworks */,
 				60E732B11E6BDABD00AB2C7D /* Nimble.framework in Frameworks */,
-				60E732B31E6BDB5100AB2C7D /* Somen-macOS.framework in Frameworks */,
+				60E732B31E6BDB5100AB2C7D /* Somen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		60084D081E6AF57000D17A6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60A807221E7C46A6003EB154 /* Somen.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60A807171E7C46A6003EB154 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -159,10 +192,11 @@
 		60084CEE1E6AF52300D17A6F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				60084CED1E6AF52300D17A6F /* Somen-macOS.framework */,
+				60084CED1E6AF52300D17A6F /* Somen.framework */,
 				60084CF61E6AF52300D17A6F /* SomenTests.xctest */,
 				60084D0B1E6AF57000D17A6F /* SomenSample.app */,
 				60E732981E6B0F6F00AB2C7D /* SomenMacSample.app */,
+				60A8071B1E7C46A6003EB154 /* Somen.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,6 +269,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60A807181E7C46A6003EB154 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60A807291E7C4784003EB154 /* Somen.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -253,7 +295,7 @@
 			);
 			name = "Somen-macOS";
 			productName = Somen;
-			productReference = 60084CED1E6AF52300D17A6F /* Somen-macOS.framework */;
+			productReference = 60084CED1E6AF52300D17A6F /* Somen.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		60084CF51E6AF52300D17A6F /* SomenTests */ = {
@@ -282,16 +324,36 @@
 				60084D071E6AF57000D17A6F /* Sources */,
 				60084D081E6AF57000D17A6F /* Frameworks */,
 				60084D091E6AF57000D17A6F /* Resources */,
+				60A807271E7C46A6003EB154 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				60E732921E6B0E0A00AB2C7D /* PBXTargetDependency */,
+				60A807211E7C46A6003EB154 /* PBXTargetDependency */,
 			);
 			name = SomenSample;
 			productName = SomenSample;
 			productReference = 60084D0B1E6AF57000D17A6F /* SomenSample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		60A8071A1E7C46A6003EB154 /* Somen-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60A807241E7C46A6003EB154 /* Build configuration list for PBXNativeTarget "Somen-iOS" */;
+			buildPhases = (
+				60A807161E7C46A6003EB154 /* Sources */,
+				60A807171E7C46A6003EB154 /* Frameworks */,
+				60A807181E7C46A6003EB154 /* Headers */,
+				60A807191E7C46A6003EB154 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Somen-iOS";
+			productName = "Somen-iOS";
+			productReference = 60A8071B1E7C46A6003EB154 /* Somen.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		60E732971E6B0F6F00AB2C7D /* SomenMacSample */ = {
 			isa = PBXNativeTarget;
@@ -338,6 +400,11 @@
 						DevelopmentTeam = Q3N95Y73WF;
 						ProvisioningStyle = Automatic;
 					};
+					60A8071A1E7C46A6003EB154 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Q3N95Y73WF;
+						ProvisioningStyle = Automatic;
+					};
 					60E732971E6B0F6F00AB2C7D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = Q3N95Y73WF;
@@ -359,6 +426,7 @@
 			projectRoot = "";
 			targets = (
 				60084CEC1E6AF52300D17A6F /* Somen-macOS */,
+				60A8071A1E7C46A6003EB154 /* Somen-iOS */,
 				60084CF51E6AF52300D17A6F /* SomenTests */,
 				60084D0A1E6AF57000D17A6F /* SomenSample */,
 				60E732971E6B0F6F00AB2C7D /* SomenMacSample */,
@@ -388,6 +456,13 @@
 				60084D181E6AF57000D17A6F /* LaunchScreen.storyboard in Resources */,
 				60084D151E6AF57000D17A6F /* Assets.xcassets in Resources */,
 				60084D131E6AF57000D17A6F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60A807191E7C46A6003EB154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +551,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60A807161E7C46A6003EB154 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		60E732941E6B0F6F00AB2C7D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -492,6 +574,11 @@
 			isa = PBXTargetDependency;
 			target = 60084CEC1E6AF52300D17A6F /* Somen-macOS */;
 			targetProxy = 60084CF81E6AF52300D17A6F /* PBXContainerItemProxy */;
+		};
+		60A807211E7C46A6003EB154 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60A8071A1E7C46A6003EB154 /* Somen-iOS */;
+			targetProxy = 60A807201E7C46A6003EB154 /* PBXContainerItemProxy */;
 		};
 		60E732921E6B0E0A00AB2C7D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -651,7 +738,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yura.Somen;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Somen;
 				SDKROOT = macosx10.12;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -681,7 +768,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yura.Somen;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Somen;
 				SDKROOT = macosx10.12;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -753,6 +840,53 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60A807251E7C46A6003EB154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Q3N95Y73WF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Somen/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.yura.Somen-iOS";
+				PRODUCT_NAME = Somen;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60A807261E7C46A6003EB154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Q3N95Y73WF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Somen/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.yura.Somen-iOS";
+				PRODUCT_NAME = Somen;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -831,6 +965,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		60A807241E7C46A6003EB154 /* Build configuration list for PBXNativeTarget "Somen-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60A807251E7C46A6003EB154 /* Debug */,
+				60A807261E7C46A6003EB154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		60E732A41E6B0F6F00AB2C7D /* Build configuration list for PBXNativeTarget "SomenMacSample" */ = {
 			isa = XCConfigurationList;
