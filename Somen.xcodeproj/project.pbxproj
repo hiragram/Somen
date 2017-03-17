@@ -13,6 +13,8 @@
 		60084D131E6AF57000D17A6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60084D111E6AF57000D17A6F /* Main.storyboard */; };
 		60084D151E6AF57000D17A6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60084D141E6AF57000D17A6F /* Assets.xcassets */; };
 		60084D181E6AF57000D17A6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60084D161E6AF57000D17A6F /* LaunchScreen.storyboard */; };
+		6011A3771E7C4D3A0061F3A6 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A807351E7C4C36003EB154 /* RxCocoa.framework */; };
+		6011A3781E7C4D3A0061F3A6 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A807361E7C4C36003EB154 /* RxSwift.framework */; };
 		60399E831E6FABFF004E6C4F /* StreamError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60399E821E6FABFF004E6C4F /* StreamError.swift */; };
 		60399E851E6FBC05004E6C4F /* OAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60399E841E6FBC05004E6C4F /* OAuthTests.swift */; };
 		60399E871E6FC1A3004E6C4F /* ObservableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60399E861E6FC1A3004E6C4F /* ObservableExtension.swift */; };
@@ -67,13 +69,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 60A8071A1E7C46A6003EB154;
 			remoteInfo = "Somen-iOS";
-		};
-		60E732911E6B0E0A00AB2C7D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 60084CE41E6AF52300D17A6F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 60084CEC1E6AF52300D17A6F;
-			remoteInfo = Somen;
 		};
 		60E732A71E6B0F7B00AB2C7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -168,7 +163,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6011A3771E7C4D3A0061F3A6 /* RxCocoa.framework in Frameworks */,
 				60A807221E7C46A6003EB154 /* Somen.framework in Frameworks */,
+				6011A3781E7C4D3A0061F3A6 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,11 +365,11 @@
 				60084D081E6AF57000D17A6F /* Frameworks */,
 				60084D091E6AF57000D17A6F /* Resources */,
 				60A807271E7C46A6003EB154 /* Embed Frameworks */,
+				6011A3791E7C4D9B0061F3A6 /* Carthage */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				60E732921E6B0E0A00AB2C7D /* PBXTargetDependency */,
 				60A807211E7C46A6003EB154 /* PBXTargetDependency */,
 			);
 			name = SomenSample;
@@ -521,6 +518,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6011A3791E7C4D9B0061F3A6 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CommonCrypto.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Crypto.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks\n";
+		};
 		60E732AB1E6B103100AB2C7D /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -629,11 +644,6 @@
 			isa = PBXTargetDependency;
 			target = 60A8071A1E7C46A6003EB154 /* Somen-iOS */;
 			targetProxy = 60A807201E7C46A6003EB154 /* PBXContainerItemProxy */;
-		};
-		60E732921E6B0E0A00AB2C7D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 60084CEC1E6AF52300D17A6F /* Somen-macOS */;
-			targetProxy = 60E732911E6B0E0A00AB2C7D /* PBXContainerItemProxy */;
 		};
 		60E732A81E6B0F7B00AB2C7D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -868,6 +878,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = Q3N95Y73WF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SomenSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -885,6 +899,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = Q3N95Y73WF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SomenSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1033,6 +1051,7 @@
 				60A807261E7C46A6003EB154 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60E732A41E6B0F6F00AB2C7D /* Build configuration list for PBXNativeTarget "SomenMacSample" */ = {
 			isa = XCConfigurationList;

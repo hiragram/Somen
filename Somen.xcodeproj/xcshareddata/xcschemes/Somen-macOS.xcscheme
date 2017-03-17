@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "60084CEC1E6AF52300D17A6F"
-               BuildableName = "Somen-macOS.framework"
+               BuildableName = "Somen.framework"
                BlueprintName = "Somen-macOS"
                ReferencedContainer = "container:Somen.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "60084CEC1E6AF52300D17A6F"
-            BuildableName = "Somen-macOS.framework"
+            BuildableName = "Somen.framework"
             BlueprintName = "Somen-macOS"
             ReferencedContainer = "container:Somen.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "60084CEC1E6AF52300D17A6F"
-            BuildableName = "Somen-macOS.framework"
+            BuildableName = "Somen.framework"
             BlueprintName = "Somen-macOS"
             ReferencedContainer = "container:Somen.xcodeproj">
          </BuildableReference>
