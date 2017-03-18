@@ -10,7 +10,7 @@ import Foundation
 
 // TODO: make sure to support all events
 
-public enum Event {
+public enum SomenEvent {
 
   public typealias RawEvent = [String: Any]
 
@@ -96,13 +96,13 @@ public enum Event {
   }
 }
 
-extension Event {
+extension SomenEvent {
   enum Error: Swift.Error {
     case mappingFailed(rawEvent: RawEvent)
   }
 }
 
-extension Event: CustomStringConvertible {
+extension SomenEvent: CustomStringConvertible {
   public var description: String {
     switch self {
     case .newStatus(rawEvent: let e):

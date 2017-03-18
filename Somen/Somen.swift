@@ -28,7 +28,7 @@ public class Somen {
 
 public extension Somen {
 
-  func home() -> Observable<Event> {
+  func home() -> Observable<SomenEvent> {
     let url = URL.init(string: "https://userstream.twitter.com/1.1/user.json")!
     var request = URLRequest.init(url: url)
     let auth = OAuth.generateHeaderContents(request: request, credential: credential)
@@ -61,15 +61,15 @@ public extension Somen {
         }
         return data
       })
-      .map({ (data) -> Event in
-        guard let jsonDict = try JSONSerialization.jsonObject(with: data, options: []) as? Event.RawEvent else {
+      .map({ (data) -> SomenEvent in
+        guard let jsonDict = try JSONSerialization.jsonObject(with: data, options: []) as? SomenEvent.RawEvent else {
           throw Error.jsonParseFailed(failedData: data)
         }
         if jsonDict.keys.contains("disconnect") {
           throw StreamError.init(rawError: jsonDict)
         }
 
-        return Event.init(rawEvent: jsonDict)
+        return SomenEvent.init(rawEvent: jsonDict)
       })
   }
 
