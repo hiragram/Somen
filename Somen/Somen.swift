@@ -15,6 +15,8 @@ internal typealias Credential = (consumerKey: String, consumerSecret: String, ac
 
 public class Somen {
 
+  fileprivate var userstreamObservable: Observable<SomenEvent>?
+
   fileprivate let credential: Credential
 
   public init(consumerKey : String,
@@ -28,13 +30,16 @@ public class Somen {
 
 public extension Somen {
 
-  func home() -> Observable<SomenEvent> {
+  func userstream() -> Observable<SomenEvent> {
+    if let shared = userstreamObservable {
+      return shared
+    }
     let url = URL.init(string: "https://userstream.twitter.com/1.1/user.json")!
     var request = URLRequest.init(url: url)
     let auth = OAuth.generateHeaderContents(request: request, credential: credential)
     let configuration = URLSessionConfiguration.default
 
-    return Observable<Data>.create({ (observer) -> Disposable in
+    let shared = Observable<Data>.create({ (observer) -> Disposable in
       let dataDelegate = StreamingDataDelegate.init(receivedDataHandler: { (session, task, data) in
         observer.onNext(data)
       })
@@ -71,6 +76,11 @@ public extension Somen {
 
         return SomenEvent.init(rawEvent: jsonDict)
       })
+    .share()
+
+    userstreamObservable = shared
+
+    return shared
   }
 
 }

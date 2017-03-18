@@ -35,7 +35,7 @@ class ViewController: NSViewController {
   override func viewDidAppear() {
     super.viewDidAppear()
 
-    somen.home().subscribe(onNext: { (event) in
+    somen.userstream().subscribe(onNext: { (event) in
       print(event)
     }, onError: { (error) in
       print(error)
