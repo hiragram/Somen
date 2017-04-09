@@ -42,6 +42,13 @@ public extension Somen {
     let shared = Observable<Data>.create({ (observer) -> Disposable in
       let dataDelegate = StreamingDataDelegate.init(receivedDataHandler: { (session, task, data) in
         observer.onNext(data)
+      }, errorHandler: { [weak self] (error) in
+        self?.userstreamObservable = nil
+        if let error = error {
+          observer.onError(error)
+        } else {
+          observer.onError(NSError.init(domain: "Connection Error", code: 0, userInfo: [:]))
+        }
       })
       let session = URLSession.init(configuration: configuration, delegate: dataDelegate, delegateQueue: nil)
       request.allHTTPHeaderFields = ["Authorization": auth]
@@ -76,7 +83,8 @@ public extension Somen {
 
         return SomenEvent.init(rawEvent: jsonDict)
       })
-    .share().retry()
+    .retry()
+    .share()
 
     userstreamObservable = shared
 
