@@ -76,7 +76,7 @@ public extension Somen {
 
         return SomenEvent.init(rawEvent: jsonDict)
       })
-    .share()
+    .share().retry()
 
     userstreamObservable = shared
 
